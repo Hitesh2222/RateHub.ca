@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.RateHub</groupId>
+    <artifactId>RateHub</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!-- all propertied goes here -->
+    <properties>
+        <java.version>1.8</java.version>
+        <selenium.version>3.141.59</selenium.version>
+        <compiler.version>3.8.1</compiler.version>
+        <surefire.version>3.0.0-M4</surefire.version>
+        <ng.xml.file1>testng1.xml</ng.xml.file1>
+        <ng.xml.file2>testng2.xml</ng.xml.file2>
+        <testng.version>7.0.0</testng.version>
+<!--        <log4j.version>2.13.3</log4j.version>-->
+    </properties>
+    <!-- all plugin start here-->
+    <build>
+        <plugins>
+            <!--cimpliler plugin to maake sure we are using right java version-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <file>${ng.xml.file1}</file>
+                        <file>${ng.xml.file2}</file>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--All depenencies goes here-->
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.13.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.13.3</version>
+        </dependency>
+    </dependencies>
+
+</project>
