@@ -14,8 +14,11 @@ public class insurance {
 
     @FindBy(css = "nav a[href='/insurance/best-car-insurance-quote']")
     private WebElement autoInsurance;
+    @FindBy(css = "nav a[href='/insurance/best-home-insurance-quote']")
     private WebElement homeInsurance;
+    @FindBy(css = "a[href='/insurance/life-quotes']")
     private WebElement lifeIsurance;
+    @FindBy(css = "#main-content a[href='/insurance/travel']")
     private WebElement travelInsurance;
     private WebElement smallBussinessInsurance;
 
@@ -25,5 +28,17 @@ public class insurance {
     }
     public void autoInsuranceClick(){
         this.autoInsurance.click();
+    }
+    public void homeInsuClick() throws InterruptedException {
+        this.homeInsurance.click();
+//        Thread.sleep(5000);
+    }
+    public void lifeInsuClick() throws InterruptedException {
+        this.lifeIsurance.click();
+        Thread.sleep(5000);
+    }
+    public void travelInsuClick() throws InterruptedException {
+        this.travelInsurance.click();
+        Thread.sleep(5000);
     }
 }

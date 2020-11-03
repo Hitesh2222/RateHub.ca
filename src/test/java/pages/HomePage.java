@@ -26,11 +26,8 @@ public class HomePage {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-    public void insuranceClick(){
+    public void insuranceClick() throws InterruptedException {
         this.insurance.click();
-//        WebDriverWait wait = new WebDriverWait(driver,10);
-//        wait.until(ExpectedConditions.visibilityOf(insurance));
-//        return new insurance(driver);
     }
     public void logoClick(){
         this.logo.click();
