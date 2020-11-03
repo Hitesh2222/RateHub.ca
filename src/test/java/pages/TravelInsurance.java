@@ -61,7 +61,6 @@ public class TravelInsurance {
 
         wait.until(ExpectedConditions.elementToBeClickable(selectDate)).click();
         //((JavascriptExecutor) driver).executeScript("arguments[0].click()", selectDate);
-        Thread.sleep(1000);
     }
     public void tpDateClick() throws InterruptedException {
         this.toDate.click();
@@ -71,22 +70,17 @@ public class TravelInsurance {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Thread.sleep(5000);
     }
     public void radioClick() throws InterruptedException {
         this.radioButton.click();
-        Thread.sleep(5000);
     }
     public void setClick() throws InterruptedException {
         this.set.click();
-        Thread.sleep(5000);
     }
     public void numTravelerClick() throws InterruptedException {
         this.noTraveler.sendKeys("27");
-        Thread.sleep(2000);
     }
     public void getQuoteClick() throws InterruptedException {
         this.getQuote.click();
-        Thread.sleep(5000);
     }
 }
