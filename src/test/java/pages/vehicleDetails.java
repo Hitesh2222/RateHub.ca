@@ -53,7 +53,6 @@ public class vehicleDetails {
     }
     public void selectyear() throws InterruptedException {
         this.year.click();
-        Thread.sleep(5000);
         this.year.sendKeys("2020",Keys.ENTER);
 
     }
@@ -62,54 +61,42 @@ public class vehicleDetails {
     }
     public void makeClick() throws InterruptedException {
         this.make.click();
-        Thread.sleep(5000);
         this.make.sendKeys("HYUNDAI",Keys.ENTER);
     }
     public void modelClick() throws InterruptedException {
         this.model.click();
-        Thread.sleep(5000);
         this.model.sendKeys("SONATA",Keys.ENTER);
     }
     public void ownClick() throws InterruptedException {
         this.own.click();
-        Thread.sleep(5000);
     }
     public void purchaseDateClick() throws InterruptedException {
         this.purchaseDate.click();
         this.purchaseDate.sendKeys("052020",Keys.ENTER);
-        Thread.sleep(5000);
     }
     public void conditionClick() throws InterruptedException {
         this.condition.click();
-        Thread.sleep(5000);
     }
     public void plusButtonClick() throws InterruptedException {
         this.plusButon.click();
-        Thread.sleep(5000);
     }
     public void winterTireClick() throws InterruptedException {
         this.winterTire.click();
-        Thread.sleep(5000);
     } public void caaClick() throws InterruptedException {
         this.CAA.click();
-        Thread.sleep(7000);
     }
     public void parkClick() throws InterruptedException {
         this.park.click();
-        Thread.sleep(5000);
     }
     public void vehiclUseClick() throws InterruptedException {
         this.vehicleUse.click();
-        Thread.sleep(5000);
     }
     public void commuteClick() throws InterruptedException {
         this.commute.click();
         this.commute.sendKeys("80",Keys.ENTER);
-        Thread.sleep(5000);
     }
     public void travelClick() throws InterruptedException {
         this.travel.click();
         this.travel.sendKeys("500",Keys.ENTER);
-        Thread.sleep(5000);
     }
 }
