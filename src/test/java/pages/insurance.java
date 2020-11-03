@@ -31,14 +31,11 @@ public class insurance {
     }
     public void homeInsuClick() throws InterruptedException {
         this.homeInsurance.click();
-//        Thread.sleep(5000);
     }
     public void lifeInsuClick() throws InterruptedException {
         this.lifeIsurance.click();
-        Thread.sleep(5000);
     }
     public void travelInsuClick() throws InterruptedException {
         this.travelInsurance.click();
-        Thread.sleep(5000);
     }
 }
