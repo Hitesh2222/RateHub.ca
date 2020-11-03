@@ -60,24 +60,9 @@ public class ExcelDataManager {
     public Object [] [] contactProvider(){
         Object [] [] data = {
                 { "hitesh@gmail.com","sbe","hitesh","chavda"},
-                {"ankit@gmail.com","sbe","Atin","Singh"},
+                {"ankit@gmail.com","sbe","Ankit","Singh"},
 
         };
         return data;
     }
-    @DataProvider
-    public Iterator<Object[]> contactProvider2(){
-//        List<Object[]> data = new ArrayList<>();
-//        data.add(new Object[] { "hitesh@gmail.com","sbe","hitesh","chavda"});
-//        data.add(new Object[] {"atina@gmail.com","pragra","Atin","Singh"});
-        return getDataFromSheet("Contact").iterator();
-    }
-
-//    @DataProvider
-//    public Iterator<Object[]> dummy(){
-////        List<Object[]> data = new ArrayList<>();
-////        data.add(new Object[] { "hitesh@gmail.com","sbe","hitesh","chavda"});
-////        data.add(new Object[] {"atina@gmail.com","pragra","Atin","Singh"});
-//        return getDataFromSheet("Account").iterator();
-//    }
 }
